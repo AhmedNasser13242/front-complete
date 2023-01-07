@@ -1,0 +1,237 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
+  overflow: hidden;
+  background-color: #131313;
+}
+.cols {
+  width: 80%;
+}
+.topline {
+  position: relative;
+  left: 120px;
+  display: block;
+  position: relative;
+  font-size: 50px;
+  color: #c06fb4;
+}
+
+.topline::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  background-color: #ffffff;
+}
+.text1 {
+  position: relative;
+  left: 120px;
+  display: block;
+  font-size: 2.1em;
+  font-weight: 900;
+  color: #ffffff;
+}
+.multiText {
+  color: hsl(0, 0%, 100%);
+  text-transform: capitalize;
+}
+p {
+  display: block;
+  width: 90%;
+  font-size: 2em;
+  color: #c06fb4;
+}
+.btns {
+  width: 60%;
+  position: relative;
+}
+button {
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #c28fa0;
+  padding: 8px 6px;
+  margin: 40px 5px;
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
+button:hover {
+  background-color: #b5599f;
+}
+.imgbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.imgbox img {
+  position: relative;
+  height: 100%;
+  width: 450px;
+  top: 30px;
+  right: 50px;
+  transform: rotateY("180deg");
+  animation: animateUser 4s linear infinite;
+}
+@keyframes animateUser {
+  50% {
+    right: 30px;
+    top: -40px;
+  }
+}
+.btts {
+  background-color: #252525;
+  padding: 0px 20px 10px 20px;
+}
+.btts a {
+  font-size: 18px;
+  color: #ffff;
+}
+@media only screen and (max-width: 780px) {
+  .imgbox {
+    display: none;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  .wrapper {
+    display: flex;
+    width: 140%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 40% 0%;
+    right: 75px;
+    position: relative;
+  }
+}
+.card {
+  border: 0px;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-card .ant-card-actions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 0px solid #f0f0f0;
+  display: flex;
+  border-radius: 0 0 8px 8px;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-card-bordered {
+  border: 0px;
+}
+h2 {
+  position: relative;
+  -webkit-text-stroke: 0.4px #b5599f;
+  text-transform: uppercase;
+  color: #131313;
+}
+h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #c06fb4;
+  -webkit-text-stroke: #131313;
+  border-right: 2px solid rgb(187, 134, 212);
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 17%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .wrapper {
+    padding: 30px 0px 50px 0px;
+  }
+  @keyframes animate {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+    70%,
+    90% {
+      width: 24%;
+    }
+  }
+}
+p {
+  color: #ffff;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.hi {
+  position: relative;
+  color: #252525;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, rgba(222, 157, 220, 0.267));
+  line-height: 0.7em;
+  outline: none;
+  animation: animate1 5s linear infinite;
+}
+@keyframes animate1 {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #929292;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: rgb(255, 233, 249);
+    text-shadow: 0 0 10px #e26ec9, 0 0 15px #e26ec9, 0 0 30px #e26ec9,
+      0 0 80px #e26ec9, 0 0 160px #e26ec9;
+  }
+}

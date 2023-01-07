@@ -1,0 +1,39 @@
+.eyes {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 1000px;
+  text-align: center;
+}
+.eye {
+  width: 230px;
+  height: 115px;
+  background: #fff;
+  display: inline-block;
+  margin: 30px;
+  border-radius: 89%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball {
+  width: 80px;
+  height: 80px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 30px solid rgb(14, 203, 228);
+}
+@media only screen and (max-width: 780px) {
+  .eyes {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .eyes {
+    left: 800px;
+  }
+}
