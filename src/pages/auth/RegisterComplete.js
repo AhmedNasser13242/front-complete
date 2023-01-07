@@ -79,11 +79,7 @@ const RegisterComplete = () => {
 
   const completeRegistrationForm = () => (
     <form onSubmit={handleSubmit}>
-      <input
-        type="email"
-        className="form-control"
-        value="اكتب ايميلك مجددا هنا"
-      />
+      <input type="email" className="form-control" />
 
       <input
         type="password"
